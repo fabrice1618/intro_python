@@ -1,5 +1,64 @@
 # Introduction au langage Python
 
+## Sommaire
+
+- Introduction
+- Installation anaconda
+- Documentation
+- Partie 1 : [Partie 1](intro-python-part1.ipynb)
+    - Les noms de variable
+    - Mots clés réservés du langage
+    - Les commentaires
+    - Indentation
+    - Instructions multi-ligne
+    - Plusieurs instructions par ligne
+    - Les types simples (scalaires)
+      - Les entiers (int)
+      - Les nombres à virgule flottante (float)
+      - Les nombres complexes (complex)
+      - Les fractions
+      - Conversion de type
+      - Chaînes de caractères (string)
+      - Extraire une partie d'un texte
+      - Mise en forme de chaînes de caractères
+        - la fonction print()
+        - dans le style C
+        - la méthode format
+        - les f-strings, formatted string literals
+    - Les opérateurs
+      - Les opérateurs arithmétiques
+      - Les opérateurs sur les chaines de caractère
+      - Opérateurs logiques
+      - Opérateurs de comparaison
+      - Précédence des opérateurs
+    - La bibliothèque standard et ses modules
+      - Utilisation des modules
+      - Connaitre le contenu d'un module et consulter l'aide
+      - exemple d'utilisation du module math
+      - Quelques modules utiles
+- Partie 2 : [Partie 2](intro-python-part2.ipynb)
+  - A - Conditionnelle: if
+  - B - Itératif : while
+  - C - Itératif : for
+  - D - Les fonctions
+- Partie 3 : [Partie 3](intro-python-part3.ipynb)
+  - A - Listes
+  - B - Tuples
+  - C - Dictionnaires
+- Partie 4 - CSV / SQL: [Partie 4](intro-python-part4-bonus.ipynb)
+  - Les fichiers CSV
+    - Lecture de fichier CSV
+    - écriture dans un fichier CSV
+  - Les bases de données SQL
+    - Création d'une base de données
+    - Créer une table dans la base de données
+    - Ajouter des lignes dans une table
+    - Lecture d'une table
+    - Effacer un enregistrement
+- Partie 5 - Bonus: [Partie 5](intro-python-part5-bonus.ipynb)
+  - A - Classes
+  - B - Exceptions
+
 ## Introduction
 
 - Langage interprété
