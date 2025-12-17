@@ -1545,7 +1545,7 @@ class Livre(Document):  # Livre est un Document
 
 ### 31.1 Motivation
 
-**Problème :** Vous voulez définiruniquement une **interface** (contrat) sans implémenter le code. La classe enfant DOIT implémenter les méthodes.
+**Problème :** Vous voulez définir uniquement une **interface** (contrat) sans implémenter le code. La classe enfant DOIT implémenter les méthodes.
 
 **Solution :** Les **classes abstraites** :
 - Ne peuvent **pas** être instanciées directement
