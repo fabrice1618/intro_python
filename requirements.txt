@@ -1,0 +1,9 @@
+# Paquets du cours d'introduction à Python, installés par setup_venv.sh
+
+# Noyau Jupyter : nécessaire pour exécuter les notebooks dans VS Code
+ipykernel
+
+# Parties 4 à 6 et dossier API : décommenter si besoin, puis relancer setup_venv.sh
+# pandas
+# openpyxl
+# requests

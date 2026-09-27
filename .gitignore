@@ -3,3 +3,4 @@ config.json
 version_2021/
 poo_eisi/
 venv/
+evaluation/*_correction.ipynb
