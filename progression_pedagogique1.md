@@ -26,7 +26,7 @@ Progression en **3 séances** pour découvrir le langage Python dans des noteboo
 
 - exécuter un notebook dans VS Code, dans l'ordre, et redémarrer le noyau en cas de blocage ;
 - lire un message d'erreur pour trouver la ligne fautive et la cause ;
-- manipuler les types simples (`int`, `float`, `bool`, `str`) et convertir une valeur d'un type à l'autre ;
+- manipuler les types simples (`int`, `float`, `bool`, `str`) et la valeur `None`, et convertir une valeur d'un type à l'autre ;
 - extraire une partie d'une chaîne, la transformer avec ses méthodes et mettre en forme un affichage avec une f-string ;
 - écrire des expressions avec les opérateurs arithmétiques, de comparaison et logiques ;
 - importer un module de la bibliothèque standard et consulter son aide ;
@@ -44,7 +44,7 @@ La séance 4 évalue ces objectifs par un test individuel sur machine.
 
 | Séance | Thème | Notebook | Exercices en séance |
 |---|---|---|---|
-| 1 | Types, chaînes et opérateurs | [partie 1](intro-python-part1.ipynb) | exercices01 : Swap, Permutation circulaire, Belle marquise, Calcul TVA ; exercices02 : Initiales, Nettoyer une saisie, Conversion d'une durée |
+| 1 | Types, chaînes et opérateurs | [partie 1](intro-python-part1.ipynb) | exercices01 : Swap, Permutation circulaire, Belle marquise, Calcul TVA ; exercices02 : Initiales, Nettoyer une saisie, Conversion d'une durée, Vrai ou faux ? |
 | 2 | Conditions, boucles et fonctions | [partie 2](intro-python-part2.ipynb) | exercices01 : Valeur absolue, Poussin, Eau, Distributeur de pièces, La suite de fibonacci, Conversion Fahrenheit / Celsius ; pim pam poum ; exercices02 : Triangle d'étoiles, Moyenne des saisies, Année bissextile |
 | 3 | Listes, tuples et dictionnaires | [partie 3](intro-python-part3.ipynb) | exo capteur, exercice tableau ; exercices02 : Palindromes et anagrammes, Inventaire, Carnet de notes |
 | 4 | Test | [sujet](evaluation/test_python_parties1-3.ipynb) | test individuel sur les parties 1 à 3 |
@@ -61,15 +61,15 @@ La séance 4 évalue ces objectifs par un test individuel sur machine.
 |---|---|---|
 | 15 min | Accueil et objectifs. Présentation de Python : langage interprété, typage dynamique fort, usages | [README](README.md#introduction) |
 | 25 min | Installation : `git clone`, `bash setup_venv.sh`, ouverture du dossier dans VS Code, choix du noyau `venv`. Prise en main : exécuter une cellule, ordre d'exécution, redémarrer le noyau, saisie avec `input()` | [Installation](README.md#installation--vs-code-et-venv) ; partie 1, « Utiliser un notebook dans VS Code » |
-| 35 min | Structure du langage : noms de variables, mots clés, commentaires, indentation. Lire un message d'erreur. Types numériques : `int`, `float` et ses approximations, conversions de type | Partie 1, de « Structure du langage python » à « Conversion de type » |
+| 40 min | Structure du langage : noms de variables, mots clés, commentaires, indentation. Lire un message d'erreur. Types numériques : `int`, `float` et ses approximations (comparer avec `math.isclose`). Booléens et valeur de vérité, la valeur `None`. Conversions de type, dont celle des chaînes saisies avec `input()` | Partie 1, de « Structure du langage python » à « Conversion de type » |
 | 10 min | Pause | |
-| 40 min | Chaînes de caractères : indices et slicing (exemple « cfilorux »), méthodes des chaînes, immuabilité. Mise en forme : `print()`, f-strings et leurs formats ; le style C et `format` sont seulement à savoir lire | Partie 1, de « Chaînes de caractères » à « Formater les valeurs dans une f-string » |
-| 30 min | Opérateurs arithmétiques (division entière `//`, modulo `%`), opérateurs sur les chaînes, opérateurs logiques et de comparaison, piège de la comparaison de chaînes, précédence. Convertir la saisie de `input()` | Partie 1, « Les opérateurs » |
-| 15 min | Bibliothèque standard : `import`, `dir()`, `help()`, modules `math` et `random` | Partie 1, « La bibliothèque standard et ses modules » |
-| 30 min | Exercices : Swap, Permutation circulaire, Belle marquise, Calcul TVA ; pour les plus rapides : Initiales, Nettoyer une saisie, Conversion d'une durée | [exercices01](exercices/exercices01.ipynb) ; [exercices02](exercices/exercices02.ipynb), partie 1 |
+| 35 min | Chaînes de caractères : indices et slicing (exemple « cfilorux »), méthodes des chaînes, immuabilité. Mise en forme : `print()`, f-strings et leurs formats ; le style C et `format` sont seulement à savoir lire | Partie 1, de « Chaînes de caractères » à « Formater les valeurs dans une f-string » |
+| 40 min | Opérateurs arithmétiques (division entière `//`, modulo `%`) et affectation composée (`+=`), opérateurs sur les chaînes. Opérateurs de comparaison : `is None`, piège de la comparaison de chaînes. Opérateurs logiques : table de vérité, évaluation en court-circuit, piège `x == "rouge" or "bleu"`. Survol des opérateurs binaires. Précédence. Convertir la saisie de `input()` | Partie 1, « Les opérateurs » |
+| 10 min | Bibliothèque standard : `import`, `dir()`, `help()`, modules `math` et `random` | Partie 1, « La bibliothèque standard et ses modules » |
+| 25 min | Exercices : Swap, Permutation circulaire, Belle marquise, Calcul TVA ; pour les plus rapides : Initiales, Nettoyer une saisie, Conversion d'une durée, Vrai ou faux ? | [exercices01](exercices/exercices01.ipynb) ; [exercices02](exercices/exercices02.ipynb), partie 1 |
 | 10 min | Bilan : les types, la conversion de `input()`, les f-strings ; travail personnel | |
 
-> **Remarque** : les nombres complexes, les fractions, les écritures binaire, octale et hexadécimale ainsi que la table complète de précédence sont à survoler : ils ne sont pas réutilisés dans la suite. Si l'installation prend du retard sur un poste, l'étudiant suit sur le poste d'un voisin et termine l'installation pendant la pause.
+> **Remarque** : les nombres complexes, les fractions, les écritures binaire, octale et hexadécimale, les opérateurs binaires ainsi que la table complète de précédence sont à survoler : ils ne sont pas réutilisés dans la suite, sauf dans l'exercice Registre d'état, proposé en travail personnel. Si l'installation prend du retard sur un poste, l'étudiant suit sur le poste d'un voisin et termine l'installation pendant la pause.
 
 ---
 
@@ -145,9 +145,9 @@ Pour chaque notion, la section du notebook, les exercices et le chapitre de *Thi
 | Notion | Notebook, section | Exercices | Think Python |
 |---|---|---|---|
 | Notebook, variables, erreurs | Partie 1 : Utiliser un notebook, Structure du langage, Lire un message d'erreur | Swap, Permutation circulaire | 1, 2 |
-| Types numériques, conversions | Partie 1 : Les types simples | Calcul TVA, Conversion d'une durée | 2 |
+| Types simples, booléens, `None`, conversions | Partie 1 : Les types simples | Calcul TVA, Conversion d'une durée, Vrai ou faux ? | 2, 5 |
 | Chaînes, méthodes, f-strings | Partie 1 : Chaînes de caractères | Belle marquise, Initiales, Nettoyer une saisie, Ticket de caisse | 8 |
-| Opérateurs, modules | Partie 1 : Les opérateurs, La bibliothèque standard | Calcul TVA | 2, 3 |
+| Opérateurs, modules | Partie 1 : Les opérateurs, La bibliothèque standard | Calcul TVA, Vrai ou faux ?, Registre d'état | 2, 3, 5 |
 | Conditions, `match` | Partie 2 : A | Valeur absolue, Poussin, Eau | 5 |
 | Boucles `while` et `for` | Partie 2 : B et C | pim pam poum, Distributeur de pièces, La suite de fibonacci, Compteur de mots, Code cesar, Mot de passe, Triangle d'étoiles, Moyenne des saisies, Menu | 7 |
 | Fonctions, `assert` | Partie 2 : D et E | Conversion Fahrenheit / Celsius, Année bissextile | 3, 6 |
@@ -161,7 +161,7 @@ Pour chaque notion, la section du notebook, les exercices et le chapitre de *Thi
 
 | Après la séance | À faire |
 |---|---|
-| 1 | Terminer les exercices de la partie 1 dans [exercices01](exercices/exercices01.ipynb) et [exercices02](exercices/exercices02.ipynb), Ticket de caisse compris ; *Think Python*, chapitres 1 et 2 |
+| 1 | Terminer les exercices de la partie 1 dans [exercices01](exercices/exercices01.ipynb) et [exercices02](exercices/exercices02.ipynb), Ticket de caisse et Registre d'état compris ; *Think Python*, chapitres 1 et 2 |
 | 2 | Terminer les exercices de la partie 2 : Compteur de mots, Code cesar, Menu ; Mot de passe pour les plus à l'aise ; *Think Python*, chapitres 5 et 7 |
 | 3 | Terminer Inventaire et Carnet de notes ; refaire sans regarder la solution les exemples « occurrences » et « codage et décodage » de la partie 3 ; réviser avec les sections « Pour s'entraîner » des trois parties ; *Think Python*, chapitres 10 à 12 |
 

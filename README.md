@@ -20,6 +20,8 @@
       - Les nombres à virgule flottante (float)
       - Les nombres complexes (complex)
       - Les fractions
+      - Les booléens (bool)
+      - La valeur None (NoneType)
       - Conversion de type
       - Chaînes de caractères (string)
       - Extraire une partie d'un texte
@@ -32,9 +34,12 @@
         - formater les valeurs dans une f-string
     - Les opérateurs
       - Les opérateurs arithmétiques
+        - affectation composée
       - Les opérateurs sur les chaines de caractère
-      - Opérateurs logiques
       - Opérateurs de comparaison
+      - Opérateurs logiques
+        - évaluation en court-circuit
+      - Opérateurs binaires (bit à bit)
       - Précédence des opérateurs
     - La bibliothèque standard et ses modules
       - Utilisation des modules
