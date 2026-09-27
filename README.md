@@ -86,7 +86,10 @@
   - B - Exceptions
 - Partie 6 - Excel : [Partie 6](intro-python-part6-excel.ipynb)
   - Lecture et écriture de fichiers Excel avec pandas
-- Exercices : [exercices](exercices/), avec leurs corrections dans les notebooks `*_correction.ipynb`
+- Exercices : un notebook par partie, qui n'utilise que les notions déjà vues, avec sa correction dans le notebook `*_correction.ipynb` du même nom
+  - [exercices_partie1](exercices/exercices_partie1.ipynb) : variables, chaînes, nombres, booléens et opérateurs
+  - [exercices_partie2](exercices/exercices_partie2.ipynb) : conditions, boucles, fonctions
+  - [exercices_partie3](exercices/exercices_partie3.ipynb) : listes, tuples, dictionnaires, ensembles
 - Évaluation : [test sur les parties 1 à 3](evaluation/test_python_parties1-3.ipynb)
 
 ## Introduction

@@ -13,7 +13,7 @@ Progression en **3 séances** pour découvrir le langage Python dans des noteboo
 - **Matériel** : pour chaque étudiant, un poste Linux avec Python 3.10 ou plus récent, `git` et VS Code ; l'environnement se prépare avec `bash setup_venv.sh` (voir [Installation](README.md#installation--vs-code-et-venv))
 - **Supports** :
   - notebooks du cours : [partie 1](intro-python-part1.ipynb), [partie 2](intro-python-part2.ipynb), [partie 3](intro-python-part3.ipynb) ; chacun se termine par une section « Pour s'entraîner »
-  - exercices : [exercices01](exercices/exercices01.ipynb) et [exercices02](exercices/exercices02.ipynb), avec en tête un tableau exercice → partie → séance → difficulté (★ à ★★★) ; [pim pam poum](exercices/exercice_pimpampoum.ipynb), [exo capteur](exercices/exo_capteur.ipynb), [exercice tableau](exercices/exercice_tableau.ipynb), [bac belge](exercices/bac%20belge.ipynb) ; corrections dans les notebooks `*_correction.ipynb`
+  - exercices : un notebook par partie, [exercices_partie1](exercices/exercices_partie1.ipynb), [exercices_partie2](exercices/exercices_partie2.ipynb) et [exercices_partie3](exercices/exercices_partie3.ipynb). Chacun rappelle en tête les notions utilisables (seulement celles déjà vues) et liste ses exercices avec leur difficulté (★ à ★★★) ; corrections dans les notebooks `*_correction.ipynb` du même nom
   - livre [Think Python, 2ᵉ édition](livres/livre_thinkpython2.pdf) (en anglais) : lectures complémentaires
   - [sujet du test](evaluation/test_python_parties1-3.ipynb) ; son corrigé, `evaluation/test_python_parties1-3_correction.ipynb`, est exclu du dépôt
 - **Hors programme** : [partie 4](intro-python-part4-csv_sql.ipynb) (CSV et SQL), [partie 5](intro-python-part5-bonus.ipynb) (classes et exceptions), [partie 6](intro-python-part6-excel.ipynb) (Excel avec pandas), dossiers [avance](avance/), [API](API/) et [traiteur](traiteur/)
@@ -44,9 +44,9 @@ La séance 4 évalue ces objectifs par un test individuel sur machine.
 
 | Séance | Thème | Notebook | Exercices en séance |
 |---|---|---|---|
-| 1 | Types, chaînes et opérateurs | [partie 1](intro-python-part1.ipynb) | exercices01 : Swap, Permutation circulaire, Belle marquise, Calcul TVA ; exercices02 : Initiales, Nettoyer une saisie, Conversion d'une durée, Vrai ou faux ? |
-| 2 | Conditions, boucles et fonctions | [partie 2](intro-python-part2.ipynb) | exercices01 : Valeur absolue, Poussin, Eau, Distributeur de pièces, La suite de fibonacci, Conversion Fahrenheit / Celsius ; pim pam poum ; exercices02 : Triangle d'étoiles, Moyenne des saisies, Année bissextile |
-| 3 | Listes, tuples et dictionnaires | [partie 3](intro-python-part3.ipynb) | exo capteur, exercice tableau ; exercices02 : Palindromes et anagrammes, Pic de température, Inventaire, Carnet de notes |
+| 1 | Types, chaînes et opérateurs | [partie 1](intro-python-part1.ipynb) | exercices_partie1 : Swap, Permutation circulaire, Belle marquise, Calcul TVA ; pour les plus rapides : Initiales, Nettoyer une saisie, Volume de la chambre froide, Conversion d'une durée, Vrai ou faux ? |
+| 2 | Conditions, boucles et fonctions | [partie 2](intro-python-part2.ipynb) | exercices_partie2 : Valeur absolue, Poussin, Eau, pim pam poum, La suite de fibonacci, Distributeur de billets et de pièces, Conversion Fahrenheit / Celsius, Table de conversion, Année bissextile ; pour les plus rapides : Triangle d'étoiles, Moyenne des saisies, Plus ou moins, Nombre premier |
+| 3 | Listes, tuples et dictionnaires | [partie 3](intro-python-part3.ipynb) | exercices_partie3 : Compteur de mots (version listes), Capteur, Palindromes et anagrammes, Doublons, Inventaire, Tableau des notes ; pour les plus rapides : Pic de température, Relevés de la semaine, Carnet de notes |
 | 4 | Test | [sujet](evaluation/test_python_parties1-3.ipynb) | test individuel sur les parties 1 à 3 |
 
 > **Fil rouge** : les exemples des parties 2 et 3 portent sur les relevés de température de chambres froides : saisies contrôlées, mise en froid, maximum des relevés (séance 2), puis découpage d'une ligne de relevé avec `split`, liste de dictionnaires et tableau de bord de l'exemple récapitulatif (séance 3), enfin le tableau de bord des stations météo (test). Elles préparent l'[exercice traiteur](traiteur/programme_traiteur.ipynb), qui lit un vrai fichier CSV après la partie 4.
@@ -66,7 +66,7 @@ La séance 4 évalue ces objectifs par un test individuel sur machine.
 | 35 min | Chaînes de caractères : indices et slicing (exemple « cfilorux »), méthodes des chaînes, immuabilité. Mise en forme : `print()`, f-strings et leurs formats ; le style C et `format` sont seulement à savoir lire | Partie 1, de « Chaînes de caractères » à « Formater les valeurs dans une f-string » |
 | 40 min | Opérateurs arithmétiques (division entière `//`, modulo `%`) et affectation composée (`+=`), opérateurs sur les chaînes. Opérateurs de comparaison : `is None`, piège de la comparaison de chaînes. Opérateurs logiques : table de vérité, évaluation en court-circuit, piège `x == "rouge" or "bleu"`. Survol des opérateurs binaires. Précédence. Convertir la saisie de `input()` | Partie 1, « Les opérateurs » |
 | 10 min | Bibliothèque standard : `import`, `dir()`, `help()`, modules `math` et `random` | Partie 1, « La bibliothèque standard et ses modules » |
-| 25 min | Exercices : Swap, Permutation circulaire, Belle marquise, Calcul TVA ; pour les plus rapides : Initiales, Nettoyer une saisie, Conversion d'une durée, Vrai ou faux ? | [exercices01](exercices/exercices01.ipynb) ; [exercices02](exercices/exercices02.ipynb), partie 1 |
+| 25 min | Exercices : Swap, Permutation circulaire, Belle marquise, Calcul TVA ; pour les plus rapides : Initiales, Nettoyer une saisie, Volume de la chambre froide, Conversion d'une durée, Vrai ou faux ? | [exercices_partie1](exercices/exercices_partie1.ipynb) |
 | 10 min | Bilan : les types, la conversion de `input()`, les f-strings ; travail personnel | |
 
 > **Remarque** : les nombres complexes, les fractions, les écritures binaire, octale et hexadécimale, les opérateurs binaires ainsi que la table complète de précédence sont à survoler : ils ne sont pas réutilisés dans la suite, sauf dans l'exercice Registre d'état, proposé en travail personnel. Si l'installation prend du retard sur un poste, l'étudiant suit sur le poste d'un voisin et termine l'installation pendant la pause.
@@ -81,15 +81,15 @@ La séance 4 évalue ces objectifs par un test individuel sur machine.
 |---|---|---|
 | 10 min | Rappel de la séance 1 ; questions sur les exercices | |
 | 25 min | `if` / `elif` / `else`, conditions composées, condition rangée dans une variable booléenne ; `match` et le cas par défaut `case _` | Partie 2, « A - Conditionnelle: if » |
-| 30 min | Exercices : Valeur absolue, Poussin, Eau ; terminer Calcul TVA si besoin | [exercices01](exercices/exercices01.ipynb) |
+| 30 min | Exercices : Valeur absolue, Poussin, Eau ; terminer Calcul TVA si besoin | [exercices_partie2](exercices/exercices_partie2.ipynb), « A - Conditions » |
 | 10 min | Pause | |
 | 40 min | `while` (code d'accès, mise en froid), boucle infinie et bouton **Interrupt**, `break`, `continue`, saisie contrôlée d'un nombre avec `isdigit()` ; `for` et `range`, quelle boucle choisir, parcours d'une chaîne, `enumerate`, `ord` / `chr` et catégories de caractères ; compteur, accumulateur, maximum et minimum, recherche avec `break`, boucles imbriquées | Partie 2, « B - Itératif : while » et « C - Itératif : for » |
-| 35 min | Exercices : pim pam poum, Distributeur de pièces, La suite de fibonacci ; pour les plus rapides : Triangle d'étoiles, Moyenne des saisies | [pim pam poum](exercices/exercice_pimpampoum.ipynb) ; [exercices01](exercices/exercices01.ipynb) ; [exercices02](exercices/exercices02.ipynb), partie 2 |
+| 35 min | Exercices : pim pam poum, La suite de fibonacci, Distributeur de billets et de pièces ; pour les plus rapides : Triangle d'étoiles, Moyenne des saisies, Plus ou moins | [exercices_partie2](exercices/exercices_partie2.ipynb), « B et C - Boucles while et for » |
 | 25 min | Fonctions : `def`, docstring, `return` et plusieurs valeurs renvoyées, `print` ou `return`, paramètres par défaut, sortir avec `return` et renvoyer `None`, fonction qui en appelle une autre, portée des variables, tests avec `assert` | Partie 2, « D - Les fonctions » |
-| 25 min | Exercices : Conversion Fahrenheit / Celsius, Année bissextile (tests fournis) ; réécrire pim pam poum avec une fonction | [exercices01](exercices/exercices01.ipynb) ; [exercices02](exercices/exercices02.ipynb) ; [correction de pim pam poum](exercices/exercice_pimpampoum_correction.ipynb), fonction `divisiblepar` |
+| 25 min | Exercices : Conversion Fahrenheit / Celsius, Table de conversion, Année bissextile (tests fournis) ; réécrire pim pam poum avec la fonction `divisible_par` (question 2) ; pour les plus rapides : Nombre premier | [exercices_partie2](exercices/exercices_partie2.ipynb), « D - Fonctions » |
 | 10 min | Bilan : quelle boucle pour quel besoin ; une fonction renvoie son résultat, le programme principal l'affiche | |
 
-> **Remarque** : Compteur de mots, Code cesar et Mot de passe (exercices01) parcourent une chaîne caractère par caractère : les proposer aux plus rapides ou en travail personnel ; `ord` / `chr` et les méthodes `isdigit()`, `isupper()`, `islower()` qu'ils demandent sont présentés dans « Caractères : codes et catégories ». Le Menu (exercices02) réunit `while`, `match` et saisies : un bon exercice de révision avant le test.
+> **Remarque** : Compteur de mots, Code cesar et Mot de passe parcourent une chaîne caractère par caractère : les proposer aux plus rapides ou en travail personnel ; `ord` / `chr` et les méthodes `isdigit()`, `isupper()`, `islower()` qu'ils demandent sont présentés dans « Caractères : codes et catégories ». Le Menu réunit `while`, `match` et saisies : un bon exercice de révision avant le test.
 
 ---
 
@@ -101,15 +101,15 @@ La séance 4 évalue ces objectifs par un test individuel sur machine.
 |---|---|---|
 | 10 min | Rappel de la séance 2 ; questions sur les exercices | |
 | 45 min | Listes : création, indices et slicing (`IndexError`), tableau à deux dimensions, `range`, tri avec `sort` et `sorted`, copie ou alias, ajout (`append`, `extend`), insertion et suppression, fonctions utiles (`len`, `sum`, `min`, `max`, `in`), parcours avec `enumerate`, maximum et sa position, listes en compréhension avec filtre ; des chaînes aux listes avec `split` et `join` | Partie 3, « A - Listes » |
-| 30 min | Exercices : exo capteur, puis Palindromes et anagrammes ; pour les plus rapides : Pic de température | [exo capteur](exercices/exo_capteur.ipynb) ; [exercices02](exercices/exercices02.ipynb), partie 3 |
+| 30 min | Exercices : Compteur de mots (version listes), Capteur, puis Palindromes et anagrammes ; pour les plus rapides : Pic de température, Relevés de la semaine | [exercices_partie3](exercices/exercices_partie3.ipynb), « A et B - Listes et tuples » |
 | 10 min | Pause | |
 | 15 min | Tuples : immuabilité, dépilage, échange `a, b = b, a`, liste de tuples, élément associé au maximum, `zip` ; lien avec les fonctions qui renvoient plusieurs valeurs (partie 2) ; survol du paramètre `key` | Partie 3, « B - Tuples » |
 | 30 min | Dictionnaires : création, accès, `in`, `del`, `get`, `keys()`, `values()` et `items()`, clé de la plus grande valeur, liste de dictionnaires. Exemples commentés : compter les occurrences, codage et décodage. Survol des ensembles | Partie 3, « C - Dictionnaires » et « D - Ensembles » |
-| 35 min | Exercices : Inventaire, exercice tableau ; pour les plus rapides : Carnet de notes | [exercices02](exercices/exercices02.ipynb), partie 3 ; [exercice tableau](exercices/exercice_tableau.ipynb) |
+| 35 min | Exercices : Doublons, Inventaire, Tableau des notes ; pour les plus rapides : Carnet de notes | [exercices_partie3](exercices/exercices_partie3.ipynb), « C et D - Dictionnaires et ensembles » |
 | 25 min | Préparer le test : consignes, barème et format du rendu, projetés depuis la première cellule du sujet (10 min). Exemple récapitulatif commenté : des lignes de texte au tableau de bord des chambres froides (15 min) | Première cellule du [sujet](evaluation/test_python_parties1-3.ipynb) ; partie 3, « E - Exemple récapitulatif » |
 | 10 min | Bilan : erreurs fréquentes avec les conteneurs ; quel conteneur pour quel besoin (liste ordonnée et modifiable, tuple figé, dictionnaire consulté par clé) | Partie 3, « Erreurs fréquentes » et « Quel conteneur choisir ? » |
 
-> **Remarque** : dans l'exercice tableau, une note vaut `'Absent'` : il faut l'écarter avant de calculer. Laisser les étudiants rencontrer l'erreur `TypeError`, puis lire le message ensemble.
+> **Remarque** : dans Tableau des notes, une note vaut `'Absent'` : il faut l'écarter avant de calculer. Laisser les étudiants rencontrer l'erreur `TypeError`, puis lire le message ensemble.
 
 ---
 
@@ -145,15 +145,15 @@ Pour chaque notion, la section du notebook, les exercices et le chapitre de *Thi
 | Notion | Notebook, section | Exercices | Think Python |
 |---|---|---|---|
 | Notebook, variables, erreurs | Partie 1 : Utiliser un notebook, Structure du langage, Lire un message d'erreur | Swap, Permutation circulaire | 1, 2 |
-| Types simples, booléens, `None`, conversions | Partie 1 : Les types simples | Calcul TVA, Conversion d'une durée, Vrai ou faux ? | 2, 5 |
-| Chaînes, méthodes, f-strings | Partie 1 : Chaînes de caractères | Belle marquise, Initiales, Nettoyer une saisie, Ticket de caisse | 8 |
-| Opérateurs, modules | Partie 1 : Les opérateurs, La bibliothèque standard | Calcul TVA, Vrai ou faux ?, Registre d'état | 2, 3, 5 |
+| Types simples, booléens, `None`, conversions | Partie 1 : Les types simples | Calcul TVA, Volume de la chambre froide, Conversion d'une durée, Vrai ou faux ? | 2, 5 |
+| Chaînes, méthodes, f-strings | Partie 1 : Chaînes de caractères | Belle marquise, Initiales, Nettoyer une saisie, Ticket de caisse, Étiquette de relevé | 8 |
+| Opérateurs, modules | Partie 1 : Les opérateurs, La bibliothèque standard | Calcul TVA, Distributeur de billets et de pièces, Vrai ou faux ?, Registre d'état | 2, 3, 5 |
 | Conditions, `match` | Partie 2 : A | Valeur absolue, Poussin, Eau | 5 |
-| Boucles `while` et `for` | Partie 2 : B et C | pim pam poum, Distributeur de pièces, La suite de fibonacci, Compteur de mots, Code cesar, Mot de passe, Triangle d'étoiles, Moyenne des saisies, Menu | 7 |
-| Fonctions, `assert` | Partie 2 : D | Conversion Fahrenheit / Celsius, Année bissextile | 3, 6 |
-| Listes, `split` et `join` | Partie 3 : A | exo capteur, bac belge, Palindromes et anagrammes, Pic de température | 10 |
-| Tuples | Partie 3 : B | test, exercice 5.b | 12 |
-| Dictionnaires, liste de dictionnaires, ensembles | Partie 3 : C, D et E | exercice tableau, Inventaire, Carnet de notes | 11 |
+| Boucles `while` et `for` | Partie 2 : B et C | pim pam poum, Triangle d'étoiles, La suite de fibonacci, Distributeur de billets et de pièces, Plus ou moins, Moyenne des saisies, Menu, Compteur de mots, Code cesar, Mot de passe | 7 |
+| Fonctions, `assert` | Partie 2 : D | Conversion Fahrenheit / Celsius, Table de conversion, Année bissextile, Nombre premier | 3, 6 |
+| Listes, `split` et `join` | Partie 3 : A | Compteur de mots (version listes), Capteur, Palindromes et anagrammes, Pic de température, Relevés de la semaine, Bac belge | 10 |
+| Tuples | Partie 3 : B | Relevés de la semaine (`zip`) ; test, exercice 5.b | 12 |
+| Dictionnaires, liste de dictionnaires, ensembles | Partie 3 : C, D et E | Doublons, Inventaire, Tableau des notes, Carnet de notes | 11 |
 
 ---
 
@@ -161,9 +161,9 @@ Pour chaque notion, la section du notebook, les exercices et le chapitre de *Thi
 
 | Après la séance | À faire |
 |---|---|
-| 1 | Terminer les exercices de la partie 1 dans [exercices01](exercices/exercices01.ipynb) et [exercices02](exercices/exercices02.ipynb), Ticket de caisse et Registre d'état compris ; *Think Python*, chapitres 1 et 2 |
-| 2 | Terminer les exercices de la partie 2 : Compteur de mots, Code cesar, Menu ; Mot de passe pour les plus à l'aise ; *Think Python*, chapitres 5 et 7 |
-| 3 | Terminer Inventaire, Pic de température et Carnet de notes ; refaire sans regarder la solution les exemples « occurrences », « codage et décodage » et l'exemple récapitulatif de la partie 3 ; réviser avec les sections « Pour s'entraîner » des trois parties ; *Think Python*, chapitres 10 à 12 |
+| 1 | Terminer les exercices de [exercices_partie1](exercices/exercices_partie1.ipynb), Distributeur de billets et de pièces, Ticket de caisse, Étiquette de relevé et Registre d'état compris ; *Think Python*, chapitres 1 et 2 |
+| 2 | Terminer les exercices de [exercices_partie2](exercices/exercices_partie2.ipynb) : Plus ou moins, Compteur de mots, Code cesar, Menu, Nombre premier ; Mot de passe pour les plus à l'aise ; *Think Python*, chapitres 5 et 7 |
+| 3 | Terminer les exercices de [exercices_partie3](exercices/exercices_partie3.ipynb) : Pic de température, Relevés de la semaine, Bac belge et Carnet de notes ; refaire sans regarder la solution les exemples « occurrences », « codage et décodage » et l'exemple récapitulatif de la partie 3 ; réviser avec les sections « Pour s'entraîner » des trois parties ; *Think Python*, chapitres 10 à 12 |
 
 ---
 
@@ -173,7 +173,7 @@ Pour chaque notion, la section du notebook, les exercices et le chapitre de *Thi
 - Les notebooks utilisent `input()` : dans VS Code, la zone de saisie apparaît en haut de la fenêtre, ce qui surprend au début ; le montrer pendant la prise en main.
 - Les notebooks du cours sont enregistrés avec leurs résultats, sauf les cellules ajoutées ou corrigées. **Restart** puis **Run All** régénère tous les résultats (répondre aux saisies demandées).
 - Le sujet du test est versionné dans le dépôt : si les étudiants clonent le dépôt avant le test, ne publier le dossier [evaluation](evaluation/) qu'après le test, ou distribuer le sujet séparément. Le corrigé est exclu du dépôt par `.gitignore` : le conserver en local.
-- Garder à portée de main les corrections : [exercices01_correction](exercices/exercices01_correction.ipynb), [exercices02_correction](exercices/exercices02_correction.ipynb), [exercice_pimpampoum_correction](exercices/exercice_pimpampoum_correction.ipynb), [exercice_tableau_correction](exercices/exercice_tableau_correction.ipynb).
+- Garder à portée de main les corrections : [exercices_partie1_correction](exercices/exercices_partie1_correction.ipynb), [exercices_partie2_correction](exercices/exercices_partie2_correction.ipynb), [exercices_partie3_correction](exercices/exercices_partie3_correction.ipynb).
 
 ---
 
@@ -183,7 +183,7 @@ Pour chaque notion, la section du notebook, les exercices et le chapitre de *Thi
 |---|---|
 | 1 | le notebook de la partie 1 s'exécute dans VS Code avec le noyau `venv` ; le Calcul TVA lit des valeurs, les convertit et affiche le résultat avec une f-string |
 | 2 | pim pam poum affiche la sortie attendue ; la fonction `est_bissextile` passe ses tests `assert` |
-| 3 | exo capteur calcule la moyenne sans les valeurs extrêmes ; l'Inventaire affiche la valeur du stock |
+| 3 | Capteur calcule la moyenne sans les valeurs extrêmes ; l'Inventaire affiche la valeur du stock |
 | 4 | le notebook rendu s'exécute ; les tests `assert` de l'exercice 4 passent |
 
 - Lire le message d'erreur est le premier réflexe à installer dès la séance 1 : demander à l'étudiant d'en lire la dernière ligne avant d'appeler à l'aide.
