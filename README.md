@@ -54,18 +54,22 @@
   - B - Itératif : while
     - break, continue et saisie contrôlée
   - C - Itératif : for
-    - compteur, accumulateur, boucles imbriquées
+    - quelle boucle choisir, parcours d'une chaîne, codes des caractères
+    - compteur, accumulateur, maximum et minimum, recherche, boucles imbriquées
   - D - Les fonctions
-    - print ou return, portée des variables, tester avec assert
-  - E - Exemple récapitulatif : le chiffre de César
+    - print ou return, sortir avec return, portée des variables, tester avec assert
   - Pour s'entraîner
 - Partie 3 : [Partie 3](intro-python-part3.ipynb)
   - A - Listes
-    - tri, copie, fonctions utiles, chaînes et listes (split, join)
+    - indices, tableau à deux dimensions, tri, copie, modification, fonctions utiles
+    - parcours, maximum et sa position, listes en compréhension, split et join
   - B - Tuples
-    - liste de tuples
+    - échange de valeurs, liste de tuples, élément associé au maximum, zip, tri selon un critère
   - C - Dictionnaires
-    - get, liste de dictionnaires
+    - get, keys, values et items, clé de la plus grande valeur, liste de dictionnaires
+  - D - Ensembles (set)
+  - E - Exemple récapitulatif : tableau de bord des chambres froides
+  - Erreurs fréquentes, quel conteneur choisir
   - Pour s'entraîner
 - Partie 4 - CSV / SQL: [Partie 4](intro-python-part4-csv_sql.ipynb)
   - Les fichiers CSV

@@ -46,10 +46,10 @@ La séance 4 évalue ces objectifs par un test individuel sur machine.
 |---|---|---|---|
 | 1 | Types, chaînes et opérateurs | [partie 1](intro-python-part1.ipynb) | exercices01 : Swap, Permutation circulaire, Belle marquise, Calcul TVA ; exercices02 : Initiales, Nettoyer une saisie, Conversion d'une durée, Vrai ou faux ? |
 | 2 | Conditions, boucles et fonctions | [partie 2](intro-python-part2.ipynb) | exercices01 : Valeur absolue, Poussin, Eau, Distributeur de pièces, La suite de fibonacci, Conversion Fahrenheit / Celsius ; pim pam poum ; exercices02 : Triangle d'étoiles, Moyenne des saisies, Année bissextile |
-| 3 | Listes, tuples et dictionnaires | [partie 3](intro-python-part3.ipynb) | exo capteur, exercice tableau ; exercices02 : Palindromes et anagrammes, Inventaire, Carnet de notes |
+| 3 | Listes, tuples et dictionnaires | [partie 3](intro-python-part3.ipynb) | exo capteur, exercice tableau ; exercices02 : Palindromes et anagrammes, Pic de température, Inventaire, Carnet de notes |
 | 4 | Test | [sujet](evaluation/test_python_parties1-3.ipynb) | test individuel sur les parties 1 à 3 |
 
-> **Fil rouge** : les données de mesures reviennent d'une séance à l'autre : la saisie contrôlée d'un numéro de chambre froide (séance 2), le découpage d'une ligne de relevé avec `split` puis la liste de dictionnaires (séance 3), enfin le tableau de bord des stations météo (test). Elles préparent l'[exercice traiteur](traiteur/programme_traiteur.ipynb), qui lit un vrai fichier CSV après la partie 4.
+> **Fil rouge** : les exemples des parties 2 et 3 portent sur les relevés de température de chambres froides : saisies contrôlées, mise en froid, maximum des relevés (séance 2), puis découpage d'une ligne de relevé avec `split`, liste de dictionnaires et tableau de bord de l'exemple récapitulatif (séance 3), enfin le tableau de bord des stations météo (test). Elles préparent l'[exercice traiteur](traiteur/programme_traiteur.ipynb), qui lit un vrai fichier CSV après la partie 4.
 
 ---
 
@@ -80,16 +80,16 @@ La séance 4 évalue ces objectifs par un test individuel sur machine.
 | Durée | Activité | Supports |
 |---|---|---|
 | 10 min | Rappel de la séance 1 ; questions sur les exercices | |
-| 30 min | `if` / `elif` / `else`, conditions composées, condition rangée dans une variable booléenne ; `match` et le cas par défaut `case _` | Partie 2, « A - Conditionnelle: if » |
-| 35 min | Exercices : Valeur absolue, Poussin, Eau ; terminer Calcul TVA si besoin | [exercices01](exercices/exercices01.ipynb) |
+| 25 min | `if` / `elif` / `else`, conditions composées, condition rangée dans une variable booléenne ; `match` et le cas par défaut `case _` | Partie 2, « A - Conditionnelle: if » |
+| 30 min | Exercices : Valeur absolue, Poussin, Eau ; terminer Calcul TVA si besoin | [exercices01](exercices/exercices01.ipynb) |
 | 10 min | Pause | |
-| 30 min | `while` (mot de passe, plus ou moins), `break`, `continue` et saisie contrôlée ; `for` et `range`, comparaison avec `while`, `enumerate`, parcours d'une chaîne ; compteur, accumulateur, boucles imbriquées | Partie 2, « B - Itératif : while » et « C - Itératif : for » |
+| 40 min | `while` (code d'accès, mise en froid), boucle infinie et bouton **Interrupt**, `break`, `continue`, saisie contrôlée d'un nombre avec `isdigit()` ; `for` et `range`, quelle boucle choisir, parcours d'une chaîne, `enumerate`, `ord` / `chr` et catégories de caractères ; compteur, accumulateur, maximum et minimum, recherche avec `break`, boucles imbriquées | Partie 2, « B - Itératif : while » et « C - Itératif : for » |
 | 35 min | Exercices : pim pam poum, Distributeur de pièces, La suite de fibonacci ; pour les plus rapides : Triangle d'étoiles, Moyenne des saisies | [pim pam poum](exercices/exercice_pimpampoum.ipynb) ; [exercices01](exercices/exercices01.ipynb) ; [exercices02](exercices/exercices02.ipynb), partie 2 |
-| 25 min | Fonctions : `def`, docstring, `return` et plusieurs valeurs renvoyées, `print` ou `return`, paramètres par défaut, portée des variables, tests avec `assert`. Exemple récapitulatif : le chiffre de César | Partie 2, « D - Les fonctions » et « E - Exemple récapitulatif » |
+| 25 min | Fonctions : `def`, docstring, `return` et plusieurs valeurs renvoyées, `print` ou `return`, paramètres par défaut, sortir avec `return` et renvoyer `None`, fonction qui en appelle une autre, portée des variables, tests avec `assert` | Partie 2, « D - Les fonctions » |
 | 25 min | Exercices : Conversion Fahrenheit / Celsius, Année bissextile (tests fournis) ; réécrire pim pam poum avec une fonction | [exercices01](exercices/exercices01.ipynb) ; [exercices02](exercices/exercices02.ipynb) ; [correction de pim pam poum](exercices/exercice_pimpampoum_correction.ipynb), fonction `divisiblepar` |
 | 10 min | Bilan : quelle boucle pour quel besoin ; une fonction renvoie son résultat, le programme principal l'affiche | |
 
-> **Remarque** : Compteur de mots, Code cesar et Mot de passe (exercices01) parcourent une chaîne caractère par caractère : les proposer aux plus rapides ou en travail personnel. Le Menu (exercices02) réunit `while`, `match` et saisies : un bon exercice de révision avant le test.
+> **Remarque** : Compteur de mots, Code cesar et Mot de passe (exercices01) parcourent une chaîne caractère par caractère : les proposer aux plus rapides ou en travail personnel ; `ord` / `chr` et les méthodes `isdigit()`, `isupper()`, `islower()` qu'ils demandent sont présentés dans « Caractères : codes et catégories ». Le Menu (exercices02) réunit `while`, `match` et saisies : un bon exercice de révision avant le test.
 
 ---
 
@@ -100,14 +100,14 @@ La séance 4 évalue ces objectifs par un test individuel sur machine.
 | Durée | Activité | Supports |
 |---|---|---|
 | 10 min | Rappel de la séance 2 ; questions sur les exercices | |
-| 40 min | Listes : création, indices et slicing, listes de listes, `range`, tri avec `sort` et `sorted`, copie ou alias, ajout, insertion et suppression, fonctions utiles (`len`, `sum`, `min`, `max`, `in`), parcours, listes en compréhension ; des chaînes aux listes avec `split` et `join` | Partie 3, « A - Listes » |
-| 30 min | Exercices : exo capteur, puis Palindromes et anagrammes | [exo capteur](exercices/exo_capteur.ipynb) ; [exercices02](exercices/exercices02.ipynb), partie 3 |
+| 45 min | Listes : création, indices et slicing (`IndexError`), tableau à deux dimensions, `range`, tri avec `sort` et `sorted`, copie ou alias, ajout (`append`, `extend`), insertion et suppression, fonctions utiles (`len`, `sum`, `min`, `max`, `in`), parcours avec `enumerate`, maximum et sa position, listes en compréhension avec filtre ; des chaînes aux listes avec `split` et `join` | Partie 3, « A - Listes » |
+| 30 min | Exercices : exo capteur, puis Palindromes et anagrammes ; pour les plus rapides : Pic de température | [exo capteur](exercices/exo_capteur.ipynb) ; [exercices02](exercices/exercices02.ipynb), partie 3 |
 | 10 min | Pause | |
-| 15 min | Tuples : immuabilité, dépilage, liste de tuples ; lien avec les fonctions qui renvoient plusieurs valeurs (partie 2) | Partie 3, « B - Tuples » |
-| 25 min | Dictionnaires : création, accès, `in`, `del`, `get`, parcours avec `items()`, liste de dictionnaires. Exemples commentés : compter les occurrences, codage et décodage | Partie 3, « C - Dictionnaires » |
-| 45 min | Exercices : Inventaire, exercice tableau ; pour les plus rapides : Carnet de notes | [exercices02](exercices/exercices02.ipynb), partie 3 ; [exercice tableau](exercices/exercice_tableau.ipynb) |
-| 25 min | Préparer le test : consignes, barème et format du rendu, projetés depuis la première cellule du sujet. Révision au choix : terminer un exercice ★★ de chaque partie, ou refaire l'exemple des occurrences sans regarder la solution | Première cellule du [sujet](evaluation/test_python_parties1-3.ipynb) ; sections « Pour s'entraîner » des trois parties |
-| 10 min | Bilan : quel conteneur pour quel besoin (liste ordonnée et modifiable, tuple figé, dictionnaire consulté par clé) | |
+| 15 min | Tuples : immuabilité, dépilage, échange `a, b = b, a`, liste de tuples, élément associé au maximum, `zip` ; lien avec les fonctions qui renvoient plusieurs valeurs (partie 2) ; survol du paramètre `key` | Partie 3, « B - Tuples » |
+| 30 min | Dictionnaires : création, accès, `in`, `del`, `get`, `keys()`, `values()` et `items()`, clé de la plus grande valeur, liste de dictionnaires. Exemples commentés : compter les occurrences, codage et décodage. Survol des ensembles | Partie 3, « C - Dictionnaires » et « D - Ensembles » |
+| 35 min | Exercices : Inventaire, exercice tableau ; pour les plus rapides : Carnet de notes | [exercices02](exercices/exercices02.ipynb), partie 3 ; [exercice tableau](exercices/exercice_tableau.ipynb) |
+| 25 min | Préparer le test : consignes, barème et format du rendu, projetés depuis la première cellule du sujet (10 min). Exemple récapitulatif commenté : des lignes de texte au tableau de bord des chambres froides (15 min) | Première cellule du [sujet](evaluation/test_python_parties1-3.ipynb) ; partie 3, « E - Exemple récapitulatif » |
+| 10 min | Bilan : erreurs fréquentes avec les conteneurs ; quel conteneur pour quel besoin (liste ordonnée et modifiable, tuple figé, dictionnaire consulté par clé) | Partie 3, « Erreurs fréquentes » et « Quel conteneur choisir ? » |
 
 > **Remarque** : dans l'exercice tableau, une note vaut `'Absent'` : il faut l'écarter avant de calculer. Laisser les étudiants rencontrer l'erreur `TypeError`, puis lire le message ensemble.
 
@@ -150,10 +150,10 @@ Pour chaque notion, la section du notebook, les exercices et le chapitre de *Thi
 | Opérateurs, modules | Partie 1 : Les opérateurs, La bibliothèque standard | Calcul TVA, Vrai ou faux ?, Registre d'état | 2, 3, 5 |
 | Conditions, `match` | Partie 2 : A | Valeur absolue, Poussin, Eau | 5 |
 | Boucles `while` et `for` | Partie 2 : B et C | pim pam poum, Distributeur de pièces, La suite de fibonacci, Compteur de mots, Code cesar, Mot de passe, Triangle d'étoiles, Moyenne des saisies, Menu | 7 |
-| Fonctions, `assert` | Partie 2 : D et E | Conversion Fahrenheit / Celsius, Année bissextile | 3, 6 |
-| Listes, `split` et `join` | Partie 3 : A | exo capteur, bac belge, Palindromes et anagrammes | 10 |
+| Fonctions, `assert` | Partie 2 : D | Conversion Fahrenheit / Celsius, Année bissextile | 3, 6 |
+| Listes, `split` et `join` | Partie 3 : A | exo capteur, bac belge, Palindromes et anagrammes, Pic de température | 10 |
 | Tuples | Partie 3 : B | test, exercice 5.b | 12 |
-| Dictionnaires, liste de dictionnaires | Partie 3 : C | exercice tableau, Inventaire, Carnet de notes | 11 |
+| Dictionnaires, liste de dictionnaires, ensembles | Partie 3 : C, D et E | exercice tableau, Inventaire, Carnet de notes | 11 |
 
 ---
 
@@ -163,7 +163,7 @@ Pour chaque notion, la section du notebook, les exercices et le chapitre de *Thi
 |---|---|
 | 1 | Terminer les exercices de la partie 1 dans [exercices01](exercices/exercices01.ipynb) et [exercices02](exercices/exercices02.ipynb), Ticket de caisse et Registre d'état compris ; *Think Python*, chapitres 1 et 2 |
 | 2 | Terminer les exercices de la partie 2 : Compteur de mots, Code cesar, Menu ; Mot de passe pour les plus à l'aise ; *Think Python*, chapitres 5 et 7 |
-| 3 | Terminer Inventaire et Carnet de notes ; refaire sans regarder la solution les exemples « occurrences » et « codage et décodage » de la partie 3 ; réviser avec les sections « Pour s'entraîner » des trois parties ; *Think Python*, chapitres 10 à 12 |
+| 3 | Terminer Inventaire, Pic de température et Carnet de notes ; refaire sans regarder la solution les exemples « occurrences », « codage et décodage » et l'exemple récapitulatif de la partie 3 ; réviser avec les sections « Pour s'entraîner » des trois parties ; *Think Python*, chapitres 10 à 12 |
 
 ---
 
